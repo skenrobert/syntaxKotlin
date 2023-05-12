@@ -246,11 +246,11 @@ class MainActivity : ComponentActivity() {
 
         // Add a data set
 
-        myArray.addAll(listOf("Hola", "Welcome to the tutorial"))
+        myArray.addAll(listOf("Hi", "Welcome to the tutorial"))
 
         println(myArray)
 
-        //Acceso a datos
+        //Access to data
 
         val myCompany = myArray[2]
 
@@ -292,20 +292,20 @@ class MainActivity : ComponentActivity() {
      */
     fun maps() {
 
-        // Sintaxis
+        // Syntax
         var myMap: Map<String,Int> = mapOf()
         println(myMap)
 
-        // Añadir elementos
+        //Add elements
         myMap = mutableMapOf("Kenny" to 1, "Pedro" to 2, "Sara" to 5)
         println(myMap)
 
-        // Añadir un solo valor
+        // Add a single value
         myMap["Ana"] = 7
         myMap.put("María",8)
         println(myMap)
 
-        // Actualización de un dato
+        // Update of a data
         myMap.put("Kenny",3)
         myMap["Kenny"] = 4
         println(myMap)
@@ -313,26 +313,25 @@ class MainActivity : ComponentActivity() {
         myMap.put("Marcos",3)
         println(myMap)
 
-        // Acceso a un dato
+        // Access data
         println(myMap["Kenny"])
 
-        // Eliminar un dato
+        // Eliminate data
         myMap.remove("Kenny")
         println(myMap)
     }
 
     /*
-    Aquí vamos a hablar de loops, también llamados bucles
+    Here we are going to talk about loops, also called loops
     */
     private fun loops() {
 
         // Bucles
 
-        val myArray = listOf("Hola", "Bienvenidos al tutorial", "test!")
+        val myArray = listOf("hi", "Welcome", "test!")
         val myMap = mutableMapOf("Kenny" to 1, "Pedro" to 2, "Sara" to 5)
 
         // For
-
         for (myString in myArray) {
             println(myString)
         }
@@ -431,29 +430,29 @@ class MainActivity : ComponentActivity() {
         println(sumTwoNumbers(10, sumTwoNumbers(5, 5)))
     }
 
-    // Función simple
+    // Simple function
     fun sayHello() {
         println("Hola!")
     }
 
-    // Funciones con un parámetro de entrada
+    // Functions with an input parameter
     fun sayMyName(name: String) {
-        println("Hola, mi nombre es $name")
+        println("Hi, my name is $name")
     }
 
-    // Funciones con más de un parámetro de entrada
+    // Functions with more than an input parameter
     fun sayMyNameAndAge(name: String, age: Int) {
         println("Hola, mi nombre es $name y mi edad es $age")
     }
 
-    // Funciones con un valor de retorno
+    // Functions with a return value
     fun sumTwoNumbers(firstNumber: Int, secondNumber: Int) : Int {
         val sum = firstNumber + secondNumber
         return sum
     }
 
     /*
-    Aquí vamos a hablar de las clases
+   Here we are going to talk about classes
     */
     fun classes() {
 
